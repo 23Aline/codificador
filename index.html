@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificação e Decodificação de Textos</title>
     <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-            <div class="left-panel">
-                <h1>Digite seu texto</h1>
-                <textarea id="inputText" placeholder="Digite algo..."></textarea>
-                <div class="buttons">
-                    <button class="encrypt" onclick="encryptText()">Criptografar</button>
-                    <button class="decrypt" onclick="decryptText()">Descriptografar</button>
-                </div>
-                <div class="note">Apenas letras minúsculas e sem acento.</div>
-            </div>
-            <div class="right-panel">
-                <div id="outputContainer">
-                    <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
-                    <img id="imagePlaceholder" src="img trabalho.jpg" alt="Imagem de Exemplo">
-                </div>
-            </div>
-        
-            <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
-        </body>
-        </html>
+</head>
+
+<body>
+    <div class="left-panel">
+        <h2>Digite seu texto:</h2>
+        <textarea id="inputText" placeholder="Apenas letras minúsculas e sem acento..."></textarea>
+        <button class="encrypt" onclick="encryptText()">Criptografar</button>
+    </div>
+    <div class="right-panel">
+        <h2>Criptografado:</h2>
+        <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+        <button class="decrypt" onclick="decryptText()">Descriptografar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
